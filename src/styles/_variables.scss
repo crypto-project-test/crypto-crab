@@ -1,0 +1,46 @@
+// Переменные
+:root {
+    // Основные настройки цветов
+    --hue: 33; // Оранжевый - 33, зелёный - 110
+    --sat: 100%;
+
+    // Цветовая палитра
+    --button-color: hsl(var(--hue), var(--sat), 50%);
+    --text-color: hsl(var(--hue), 0%, 100%);
+    --text-secondary-color: hsl(var(--hue), 0%, 65%);
+    --unactive-text: hsl(var(--hue), 0%, 37%);
+    --container-color: hsl(var(--hue), 0%, 0%);
+    --background-color: hsl(var(--hue), 0%, 3%);
+    --text-gradient-color: linear-gradient(90deg, rgba(255,129,74,1) 0%, rgba(255,168,37,1) 20%, rgba(241,243,124,1) 100%);
+
+    // Фонт и типографика
+    --body-font: 'Inter', sans-serif;
+
+    --biggest-font-size: 36px;
+    --big-font-size: 24px;
+    --middle-font-size: 18px;
+    --normal-font-size: 16px;
+    --small-font-size: 14px;
+    --smaller-font-size: 12px;
+
+    // Жирность шрифта
+    --font-semi-bold: 800;
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 400;
+
+    // Иерархия слоёв
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 72px;
+        --big-font-size: 36px;
+        --middle-font-size: 24px;
+        --normal-font-size: 18px;
+        --small-font-size: 16px;
+        --smaller-font-size: 14px;
+    }
+}
