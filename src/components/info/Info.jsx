@@ -4,7 +4,7 @@ import './info.scss';
 const Info = () => {
     return (
         <div>
-            <div>Info</div>
+            
         </div>
     )
 };

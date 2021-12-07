@@ -1,0 +1,54 @@
+// Стили для NAV
+.header {
+    width: 100%;
+    z-index: var(--z-fixed);
+    position: fixed;
+    background-color: hsl(var(--hue), 0%, 3%);
+    padding-bottom: 24px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(8, 8, 8, .5);
+}
+
+.nav {
+    margin: 24px 120px 0 120px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__img {
+        display: block;
+        width: 54px;
+        height: 54px;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        padding-right: 75px;
+        color: #FFF;
+        font-size: var(--small-font-size);
+        transition: .3s ease-in-out;
+        opacity: 1;
+
+        &:hover {
+            color: var(--text-secondary-color);
+            opacity: .9;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}

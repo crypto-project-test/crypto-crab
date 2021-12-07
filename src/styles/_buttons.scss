@@ -1,0 +1,16 @@
+.button {
+    width: 180px;
+    height: 56px;
+    color: #0B0B0B;
+    background: var(--text-gradient-color);
+    font-size: var(--normal-font-size);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+
+    &:hover {
+        color: #FFF;
+    }
+}

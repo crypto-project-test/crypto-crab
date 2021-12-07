@@ -5,10 +5,12 @@ function App() {
   return (
     <div>
       <Nav/>
-      <About/>
-      <Market/>
-      <Info/>
-      <Pricing/>
+      <main className="main" id="main">
+        <About/>
+        <Market/>
+        <Info/>
+        <Pricing/>
+      </main>
       <Footer/>
     </div>
   );

@@ -1,0 +1,61 @@
+// Стили для ABOUT
+.about {
+    &__container {
+        margin: 0 220px 100px 220px;
+        padding-top: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 64px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-weight: var(--font-semi-bold);
+        font-size: var(--biggest-font-size);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        &-icon {
+            padding-right: 10px;
+            color: var(--button-color);
+            transition: .2s ease-in-out;
+
+            &:hover {
+                color: #FFF;
+            }
+        }
+
+        &-item {
+            font-size: var(--small-font-size);
+            padding-bottom: 22px;
+            display: inherit;
+            align-items: center;
+
+            i {
+                font-size: var(--middle-font-size);
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &__img {
+        transition: .4s ease-in-out;
+
+        &:hover {
+            transform: translateY(-1rem);
+        }
+    }
+}

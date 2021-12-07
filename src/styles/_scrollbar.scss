@@ -1,0 +1,10 @@
+// Стили для SCROLL'а
+::-webkit-scrollbar {
+    background-color: var(--background-color);
+    width: 13px;
+
+    &-thumb {
+        background-color: rgb(26, 26, 26);
+        border-radius: 75px;
+    }
+}

@@ -1,0 +1,90 @@
+// Стили для MARKET
+.market {
+    &__container {
+        margin: 0 120px 100px 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #FFF;
+        font-weight: var(--font-bold);
+        font-size: var(--biggest-font-size);
+        padding-bottom: 28px;
+    }
+
+    &__subtitle {
+        color: var(--text-secondary-color);
+        font-weight: var(--font-bold);
+        font-size: var(--normal-font-size);
+        text-align: center;
+        padding-bottom: 64px;
+    }
+
+    &__card {
+        width: 1200px;
+        height: 86px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        background-color: #1A1A1A;
+        padding-right: 52px;
+        padding-left: 52px;
+        color: #D4D4D4;
+        transition: .3s ease-in-out all;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &-name,
+        &-price,
+        &-percents {
+            font-weight: var(--font-bold);
+        }
+
+        &-name {
+            font-size: var(--middle-font-size);
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                color: goldenrod;
+            }
+        }
+
+        &-price {
+            font-size: var(--normal-font-size);
+            letter-spacing: 1px;
+        }
+
+        &-percents {
+            color: #20BF6B;
+            font-size: var(--middle-font-size);
+        }
+
+        &-img {
+            width: 130px;
+            height: 54px;
+        }
+
+        &-btn {
+            background: #212121;
+            color: #FFF;
+
+            &:hover {
+                background: #FFF;
+                color: #212121;
+            }
+        }
+    }
+}
