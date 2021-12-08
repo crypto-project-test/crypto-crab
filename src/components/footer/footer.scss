@@ -1,0 +1,38 @@
+// Стили для FOOTER
+.footer {
+    &__container {
+        display: grid;
+        align-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 120px 0 120px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__list {
+        display: inherit;
+        max-width: 420px;
+        column-gap: 16px;
+
+        &-item {
+            min-width: 80px;
+        }
+    }
+
+    &__link {
+        color: #FFF;
+        font-size: var(--small-font-size);
+    }
+
+    &__apps {
+        display: grid;
+        align-self: center;
+        row-gap: 18px;
+        text-align: right;
+    }
+}

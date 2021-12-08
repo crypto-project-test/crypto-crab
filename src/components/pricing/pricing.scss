@@ -1,0 +1,133 @@
+// Стили для PRICING
+.pricing {
+    &__container {
+        margin: 0 120px 100px 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #FFF;
+        font-weight: var(--font-bold);
+        font-size: var(--biggest-font-size);
+        padding-bottom: 28px;
+    }
+
+    &__subtitle {
+        color: var(--text-secondary-color);
+        font-weight: var(--font-bold);
+        font-size: var(--normal-font-size);
+        text-align: center;
+    }
+
+    &__cards {
+        min-width: 1000px;
+        padding-top: 100px;
+        display: inherit;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__card {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #202020;
+        padding: 16px 15px;
+        border-radius: 10px;
+        color: #FFF;
+        cursor: default;
+        transition: .3s ease-in-out all;
+
+        &-title {
+            font-weight: var(--font-bold);
+            font-size: var(--middle-font-size);
+            padding-bottom: 38px;
+        }
+
+        &-subscribe {
+            &_amount {
+                position: relative;
+                font-weight: var(--font-semi-bold);
+                font-size: 96px;
+                padding-right: 28px;
+                padding-bottom: 40px;
+
+                &::before {
+                    content: '$';
+                    position: absolute;
+                    left: -14px;
+                    top: 10px;
+                    font-weight: var(--font-bold);
+                    font-size: var(--middle-font-size);
+                }
+
+                &::after {
+                    content: '/month';
+                    position: absolute;
+                    right: -34px;
+                    top: 76px;
+                    font-weight: var(--font-medium);
+                    font-size: var(--normal-font-size);
+                }
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 76px;
+    
+            &_icon {
+                padding-right: 10px;
+                color: #FFF;
+            }
+        }
+
+        &-item {
+            font-size: var(--small-font-size);
+            font-weight: var(--font-medium);
+            padding-bottom: 10px;
+            display: inherit;
+            align-items: center;
+
+            i {
+                font-size: var(--middle-font-size);
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        &-btn {
+            background: transparent;
+            border: 1px solid #F8F8F8;
+            color: #FFF;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                color: #FFA825;
+            }
+        }
+    }
+
+    &__card {
+        &:hover {
+            background: #060202;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 12px 3px rgba(255, 168, 37, 0.4);
+
+            .pricing__card-list_icon {
+                color: #FFA825;
+            }
+
+            .pricing__card-btn {
+                border: 1px solid #FFA825;
+            }
+        }
+    }
+}

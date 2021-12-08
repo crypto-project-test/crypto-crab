@@ -13,17 +13,17 @@ const About = () => {
 
                     <ul className="about__list">
                         <li className="about__list-item">
-                            <i class='bx bxs-check-circle about__list-icon'></i>
+                            <i className='bx bxs-check-circle about__list-icon'></i>
                             Join 10m+ users buying and selling 100+ cryptocurrencies
                         </li>
 
                         <li className="about__list-item">
-                            <i class='bx bxs-check-circle about__list-icon'></i>
+                            <i className='bx bxs-check-circle about__list-icon'></i>
                             Spend with Visa Card and get up to 10% back
                         </li>
 
                         <li className="about__list-item">
-                            <i class='bx bxs-check-circle about__list-icon'></i>
+                            <i className='bx bxs-check-circle about__list-icon'></i>
                             Grow your portfolio by receiving rewards up to 14.5%
                         </li>
                     </ul>
