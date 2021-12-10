@@ -13,9 +13,8 @@
     margin: 24px 120px 0 120px;
 
     &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     &__img {
@@ -50,5 +49,29 @@
         &:last-child {
             padding-right: 0;
         }
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 20px;
+
+        i {
+            display: inline-block;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--button-color);
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: var(--button-color-alt);
+            }
+        }
+    }
+
+    &__btn {
+        width: 128px;
+        height: 50px;
     }
 }

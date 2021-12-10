@@ -35,17 +35,19 @@ const Nav = () => {
                                 Pricing
                             </li>
                         </a>
-
-                        <a className="nav__link" rel="noreferrer" href="#faq">
-                            <li className="nav__list-item">
-                                FAQ
-                            </li>
-                        </a>
                     </ul>
 
-                    <button className="nav__btn button">
-                        Register
-                    </button>
+                    <div className="nav__btns">
+                        <i class='bx bxs-sun nav__theme' id="theme-btn"></i>
+
+                        <button className="nav__btn button">
+                            Login
+                        </button>
+
+                        <button className="nav__btn button">
+                            Register
+                        </button>
+                    </div>
                 </div>
             </nav>
         </header>

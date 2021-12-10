@@ -1,38 +1,83 @@
 // Стили для FOOTER
 .footer {
-    &__container {
-        display: grid;
-        align-content: center;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 120px 0 120px;
-    }
-
-    &__info {
-        display: flex;
-        flex-direction: column;
-        row-gap: 16px;
-    }
-
     &__list {
-        display: inherit;
-        max-width: 420px;
-        column-gap: 16px;
-
-        &-item {
-            min-width: 80px;
+        &-one {
+            grid-area: one;
+        }
+    
+        &-two {
+            grid-area: two;
         }
     }
 
-    &__link {
-        color: #FFF;
-        font-size: var(--small-font-size);
+    &__copy {
+        grid-area: copyrights;
     }
 
     &__apps {
+        grid-area: apps;
+    }
+
+    &__container {
+        margin: 180px 120px 10px 120px;
         display: grid;
-        align-self: center;
-        row-gap: 18px;
-        text-align: right;
+        justify-content: space-between;
+        align-content: space-between;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        'one two apps'
+        'one two apps'
+        'copyrights copyrights copyrights';
+        row-gap: 50px;
+        column-gap: 25px;
+        border-top: 1px solid #FFF;
+        padding-top: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        text-align: center;
+    }
+
+    &__link {
+        font-size: var(--small-font-size);
+        color: #FFF;
+        transition: .3s ease-in-out;
+
+            &:hover {
+                color: var(--text-secondary-color);
+            }
+    }
+
+    &__apps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        
+        &-img {
+            display: inline-block;
+            overflow: hidden;
+            
+
+            img {
+                display: block;
+                transition: .3s ease-in-out all;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    &__copy {
+        display: inline-block;
+        font-size: var(--smaller-font-size);
     }
 }
